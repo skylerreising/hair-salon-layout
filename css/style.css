@@ -1,0 +1,191 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  font-family: 'Libre Baskerville', serif;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-transform: uppercase;
+}
+header nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+}
+.headerBox1 {
+  flex-grow: 0;
+  flex-shrink: 0;
+  width: auto;
+  height: 100%;
+  max-width: 200px; /* Adjust the value to the original width of the image */
+  display: flex;
+  align-items: center;
+  margin: 0 0 0 10px;
+}
+.headerBox2 {
+  flex-grow: 2;
+}
+.headerBox3 {
+  flex-grow: 1;
+  text-align: center;
+}
+.headerBox1 img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+}
+main {
+  background-image: url(hero-image.jpg);
+  background-size: cover;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 80px 10% 80px 10%;
+  color: white;
+}
+main section button {
+  color: black;
+}
+main section > span {
+  display: block;
+  float: right;
+  transform: translate(0, 0) rotate(90deg);
+  margin: -12% -10% 0 0;
+  font-size: .7rem;
+}
+.splashBox2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.splashBox3 {
+  background: black;
+  margin: 50px 0 0 0;
+  padding: 30px 0 20px 0;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  align-content: space-around;
+  border-radius: 15px;
+  text-transform: uppercase;
+  width: 30%;
+}
+.splashBox3 span {
+  font-size: .7rem;
+  border-left: 2px solid white;
+  padding: 0 5%;
+}
+.splashBox3 p {
+  padding: 0 5%;
+}
+.splashBox3 button {
+  display: flex;
+  align-self: flex-start;
+  flex-basis: 50%;
+  margin: 0 5%;
+}
+section div a i {
+  font-size: 2rem;
+}
+.whatWeOffer {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px 0;
+}
+.whatWeOfferBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  flex-basis: 30%;
+}
+.momentumBox {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-basis: 40%;
+  position: relative;
+}
+#momentumBoxImage {
+  display: flex;
+  align-self: stretch;
+}
+.playIcon {
+  display: flex;
+  align-self: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.whatWeOfferBox div {
+  background: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 0 20% 5%;
+  position: relative;
+  transform: translate(0%, -30%)
+}
+.promo {
+  background-image: url(Promo-Banner-Image.jpg);
+  background-size: cover;
+  height: 500px;
+  display: flex;
+}
+.promoBox {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 0 0 10%;
+}
+.lookbook {
+  text-align: center;
+}
+
+button {
+  text-transform: uppercase;
+}
+.buttonBlack {
+  color: white;
+  background: black;
+}
+.promoBox button {
+  display: flex;
+  align-self: flex-start;
+}
+#grayBack {
+  background: rgb(243, 244, 246);
+}
